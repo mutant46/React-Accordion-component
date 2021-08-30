@@ -110,6 +110,7 @@ main .questions article p {
 
 @media only screen and (max-width: 768px) {
   main {
+    padding: 2rem 1rem;
     width: 92%;
   }
   main .title,
@@ -125,6 +126,9 @@ main .questions article p {
   }
   main .questions {
     padding: 0;
+  }
+  main .questions h3 {
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=index.css.map */
