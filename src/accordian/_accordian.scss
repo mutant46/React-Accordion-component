@@ -1,0 +1,86 @@
+main {
+    width: 85%;
+    padding: 2rem;
+    margin: 2em 0em;
+    border-radius: 10px;
+    background-color: white;
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    .project__heading {
+        width: 100%;
+        font-family: $heading;
+        color: $bgDark;
+        text-align: center;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid $bgDark;
+        letter-spacing: 5px;
+        font-size: 1.75rem;
+    }
+    .title {
+        width: 40%;
+        h2 {
+            font-family: $heading;
+            letter-spacing: 1px;
+            font-size: 2.5rem;
+        }
+    }
+    .questions {
+        width: 60%;
+        padding: 0 0 0 3rem;
+        article {
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0px 2px 7px $bgLight;
+            header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                h3 {
+                    font-family: $subHeading;
+                }
+                button {
+                    padding: 0.35rem 0.25rem 0.25rem;
+                    border: none;
+                    border-radius: 50%;
+                    font-family: $para;
+                    cursor: pointer;
+                    &:hover img {
+                        transform: rotate(180deg);
+                        transition: all 0.5s ease;
+                    }
+                }
+            }
+            p {
+                padding: 2rem 0;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+                font-family: $para;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:768px) {
+    main {
+        width: 92%;
+        .title,
+        .questions {
+            width: 100%;
+        }
+        .title {
+            margin-bottom: 1.5rem;
+            h2 {
+                font-size: 1.65rem;
+                text-align: center;
+            }
+        }
+        .questions {
+            padding: 0;
+        }
+    }
+}

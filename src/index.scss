@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    // font-family: 'Teko', sans-serif;
+}
+
+// variables
+$bgDark: #6495ED;
+$bgLight: #AED6F1;
+$heading: 'Fjalla One';
+$para: 'Roboto';
+$subHeading: 'Varela Round';
+// imports
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&family=Roboto:wght@100&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import "./App/app";
+@import "./accordian/accordian";
